@@ -4,13 +4,13 @@ public class VariableExample2 {
 
 	public static void main(String[] args) {
 
-		/*자바의 기본 자료형 8가지
+		/*자바의 기본 자료형 8가지 (Primitive Data Types)
 		 * 논리형 boolean (1바이트) 
 		 * 정수형 byte(1바이트) short(2바이트) int (4바이트) long(8바이트)
 		 * 실수형 float(4바이트) double (8바이트)
 		 * 문자형 char (2바이트,유니코드 문자 체계) 
 		 * 
-		 * 참조형 - 문자형 String 
+		 * 참조형 - 문자형 String //reference
 		 */
 		
 		//변수 선언 : 메모리(RAM)에 값을 저장할 공간을 할당 하는것.
@@ -23,8 +23,6 @@ public class VariableExample2 {
 		booleanData = true ;//booleanData변수에 논리값 (true) 대입
 		
 		System.out.println("booleanData : " + booleanData);
-		
-		
 		
 		byte byteNumber = 127;//메모리에 정수값을 저장할 공간을 1바이트 할당하고 
 							 //할당된공간을 byteNumber로 부르겠다.
@@ -41,7 +39,7 @@ public class VariableExample2 {
 		 *   자료형에 따라 리터럴 표기법이 다름.
 		 */
 		
-		long longNumber = 100000000;//L or l
+		long longNumber = 100000000L;//L or l
 		System.out.println("longNumber : " + longNumber);
 		//the literal 10000000 of type int is out of range
 		//100억 이라는 값은 int의 범위를 벗어났다.
@@ -62,9 +60,9 @@ public class VariableExample2 {
 		//문자형 (char) 리터럴 표기법 : '홑따옴표'
 		//->문자하나
 		char ch = 'A';
-		System.out.println("ch : "+ch);
+		System.out.println("ch : "+ ch);
 		char ch2 = 66;
-		System.out.println("ch2 : " +ch2);
+		System.out.println("ch2 : " + ch2);
 		
 		/*char 자료형의 숫자가 대입될수 있는 이유 
 		 * -컴퓨터에는 문자표가 존재 하고 있음
@@ -80,7 +78,7 @@ public class VariableExample2 {
 		System.out.println("실수2번:"+ 실수2번);//한글도 리터럴 가능하다.
 		
 		
-		//-------------------------------------
+		//상수는 항상 같은 수
 		
 		final double PI_VALUE = 3.14;
 		//PI_VALUE = 2.33;//에러 final은 재대입 불가
