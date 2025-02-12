@@ -3,6 +3,11 @@ package edu.kh.basic;
 // class : 자바 코드가 작성되는 영역이다.
 public class JavaTest {
 	
+	
+	//git test 집에서 코드 변경 해봄
+	
+	
+	
 	//main 작성하고 ctrl + space -> 자동완성 가능
 	//main method :자바 애플리케이션을 실행하기 위해서
 	//반드시 필요한구문
@@ -25,11 +30,11 @@ public class JavaTest {
 		System.out.println(30-20);
 		System.out.println(32*3);//
 		System.out.println(30/3);//
-		System.out.println(12/2);//나머지
+		System.out.println(12%2);//나머지
 		System.out.println();
 		//""(문자열)+숫자 함께 작성 (+: 이어주는 역할)
 		
-		System.out.println("14*19 = " + 266);
+		System.out.println("14*19 = " + 266);//266
 		System.out.println("14*19 = " + 14*19);// 실제로 연산가능
 		
 		System.out.println();
