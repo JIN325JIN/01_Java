@@ -5,6 +5,7 @@ public class JavaTest {
 	
 	
 	//git test 집에서 코드 변경 해봄
+	//학원에서 공부함.....
 	
 	
 	
