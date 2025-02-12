@@ -1,7 +1,7 @@
 package edu.kh.op.practice.run;
 
 import edu.kh.op.practice.OperatorPractice;
-
+//연산자 실습문제1
 //실행용클래스
 public class PracticeRun {
 
@@ -9,6 +9,7 @@ public class PracticeRun {
 		
 
 		OperatorPractice op = new OperatorPractice();
+		
 		op.practice1();
 		
 		op.practice2();

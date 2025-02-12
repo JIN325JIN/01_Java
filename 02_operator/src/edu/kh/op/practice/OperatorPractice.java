@@ -1,7 +1,7 @@
 package edu.kh.op.practice;
 
 import java.util.Scanner;
-
+//연산자 실습문제 1
 //기능제공용
 public class OperatorPractice {
 

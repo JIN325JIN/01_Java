@@ -1,11 +1,12 @@
 package edu.kh.op.practice;
 
 import java.util.Scanner;
-
+//연산자 실습문제2
 public class OperatorPractice2 {
 
 	public static void main(String[] args) {
 
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("당신의 나이는? :");
 		int age = sc.nextInt();
