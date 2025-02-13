@@ -6,7 +6,6 @@ public class ConditionPractice {
 
 	Scanner sc = new Scanner(System.in);
 	
-	
 	public void practice1() {
 		/*키보드로 입력 받은 정수가 양수이면서 짝수일 때만 “짝수입니다.”를 출력하고
 		짝수가 아니면 “홀수입니다.“를 출력하세요. 양수가 아니면 “양수만 입력해주세요.”를 출력하세요.*/
@@ -91,7 +90,7 @@ public class ConditionPractice {
 		double weight = sc.nextDouble();
 		//BMI = 몸무게 / (키(m) * 키(m))
 		double bmi = weight/(height*height);
-		System.out.printf("BMI지수 : %f\n" ,bmi);//소수점아래 14자리하려면 string으로 결과값 받아보기.집가서
+		System.out.printf("BMI지수 : %.14f\n" ,bmi);
 			
 		if(bmi>30) {
 			System.out.println("고도비만");
