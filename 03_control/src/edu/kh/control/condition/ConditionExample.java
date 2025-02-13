@@ -270,8 +270,4 @@ public class ConditionExample {
 		}
 
 	}
-	
-	public void ex11() {
-		
-	}
 }
