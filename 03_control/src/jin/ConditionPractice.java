@@ -172,5 +172,46 @@ public class ConditionPractice {
 		System.out.println(season);
 	}
 }
-			
+	public void practice7() {
+
+		/* ATM에서 사용자가 원하는 금액을 입력하면,
+		 5만원, 1만원, 5천원, 1천원 단위로 최소 개수의 지폐로 돈을 인출하라
+		ex) 사용자가 123000원을 입력하면, 5만원 지폐 2장, 1만원 지폐 2장, 
+		5천원 지폐 0장, 1천원 지폐 3장이 필요함 */
+		System.out.print("출금할 금액 입력 :");
+		int money = sc.nextInt();
+		
+		//int fiftyTh = money / 50000; // 5만원짜리 지폐 갯수
+		// amount = amount % 50000; // 5만원짜리 지폐 거르고 난 뒤 나머지 금액 
+		// 나머지값을 amount변수에 재대입해야 아래 다음 지폐에서 재사용할 수 있음.
+		
+		//amount %= 50000; // 복합대입연산자(%와 = 을 합쳐 사용)
+		//
+		//int tenTh = amount / 10000; // 1만짜리 지폐 갯수
+		//amount %= 10000;
+		
+		//int fiveTh = amount / 5000; // 5천원짜리 지폐 갯수
+		//amount %= 5000;
+		
+		//int oneTh = amount / 1000; // 1천원짜리 지폐 갯수
+		
+	
+		
+		int fiftyTh = money/50000;
+		money %= 50000;
+		int tenTh =money/10000;
+		money %= 10000;
+		int fiveTh = money/5000;
+		money%=5000;
+		int oneTh = money/1000;
+		
+		
+		System.out.println("50000원 :"+fiftyTh);
+		System.out.println("10000원 :"+tenTh);
+		System.out.println("10000원 :"+fiveTh);
+		System.out.println("10000원 :"+oneTh);
+		
+		
+		
+	}
 }

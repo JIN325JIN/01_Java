@@ -46,33 +46,26 @@ public class OperatorPractice3 {
 		
 		int fifty =(price%50000)%10000; 
 		
-		System.out.println("5000원 : " + fifty/5000);//모르겟다
+		System.out.println("5000원 : " + fifty/5000);
 		
 		System.out.println("1000원 :" + ((price %10000)%5000)/1000);
 		
+		/*선생님 코드		
+		int fiftyTh = money / 50000; // 5만원짜리 지폐 갯수
+		 amount = amount % 50000; // 5만원짜리 지폐 거르고 난 뒤 나머지 금액 
+		 나머지값을 amount변수에 재대입해야 아래 다음 지폐에서 재사용할 수 있음.
+		amount %= 50000; // 복합대입연산자(%와 = 을 합쳐 사용)
+		 int tenTh = amount / 10000; // 1만짜리 지폐 갯수
+		amount %= 10000;
+		int fiveTh = amount / 5000; // 5천원짜리 지폐 갯수
+		amount %= 5000;
+		int oneTh = amount / 1000; // 1천원짜리 지폐 갯수
 		
-		
-		/* 선생님 코드
-		int fiftyTh = price/50000;//오만원 짜리 갯수
-		price = price % 50000;//오만원짜리 지폐 거르고 난뒤 나머지 금액//나머지값을 재대입해야 아대다음지폐에서 재사용
-		price %= 50000;//복합대입 연산자
-		
-		int tenTh = price/10000 //만원짜리 갯수 
-		price %= 10000;
-		
-		int fiveTh = price / 5000;
-		price %= 5000;
-		
-		int oneTh = price /1000;
-		아랫단위가 없어서 %모듈러는 여기서 멈춤
-		돈 더있으면 그때는 더 나눠야햄
-			System.out.println("50000원 :" +fiftyTh);	
-			System.out.println("10000원 :" +tenTh);	
-			System.out.println("5000원 :" +fiveTh);	
-			System.out.println("1000원 :" +oneTh);	
-		 */
-		
-		
+		System.out.println("50000원 :"+fiftyTh);
+		System.out.println("10000원 :"+tenTh);
+		System.out.println("10000원 :"+fiveTh);
+		System.out.println("10000원 :"+oneTh);
+	*/	
 	}
 	
 	public void practice7() {
