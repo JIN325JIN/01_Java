@@ -172,6 +172,7 @@ public class ConditionPractice {
 		System.out.println(season);
 	}
 }
+	
 	public void practice7() {
 
 		/* ATM에서 사용자가 원하는 금액을 입력하면,
@@ -214,4 +215,143 @@ public class ConditionPractice {
 		
 		
 	}
+
+	public void practice8() {
+		/* ATM에서 사용자가 원하는 금액을 입력하면,
+		 5만원, 1만원, 5천원, 1천원 단위로 최소 개수의 지폐로 돈을 인출하라
+		ex) 사용자가 123000원을 입력하면, 5만원 지폐 2장, 1만원 지폐 2장, 
+		5천원 지폐 0장, 1천원 지폐 3장이 필요함 */
+		
+		
+		System.out.print("출금할 금액 입력 :");
+		int money = sc.nextInt();
+		
+		
+		int fiftyTh = money / 50000;
+		money = money%50000;
+		
+		int tenTh = money/10000;
+		money = money%10000;
+		
+		int fiveTh = money/5000;
+		money = money %5000;
+		
+		int oneTh = money/1000;
+		money = money %1000;
+		
+		System.out.printf("50000원 : %d\n",fiftyTh);
+		System.out.printf("10000원 : %d\n",tenTh);
+		System.out.printf("5000원 : %d\n",fiveTh);
+		System.out.printf("1000원 :%d\n",oneTh);
+		
+		
+		
+		
+		
+	}
+
+	public void practice9() {
+		// 달 입력 받아서 해달달의 맞는 계절 출력
+		// 1,2,12 겨울 (-15도이하"한파경보",-12도이하 한파주의보)
+		// 3-5 봄
+		// 6-8여름 35이상 폭염경보,33도 이상 폭염주의보
+		// 9-11가을
+		// 1-12사이가 아닐땐 해당하는 계절 없다
+		
+		System.out.print("월을 입력하여 주십시오. :");
+		int month = sc.nextInt();
+		String season;
+		
+		if(month==1||month ==2||month==12) {
+			season = "겨울";
+			System.out.println("온도를 입력하여 주십시오.");
+			int temp = sc.nextInt();
+			if(temp <-15) {
+				season = "겨울" + "한파경보";
+				//season += 한파경보
+			}
+			else if(temp<-13) {
+				season = "겨울 "+"한파주의보";
+				//season += 한파주의보
+			}
+		}
+		else if (month >=3 && month <=5) {
+			season = "봄";
+		}
+		else if (month >= 6&& month <=8) {
+			season = "여름";
+			System.out.println("온도를 입력하여 주십시오.");
+			int temp = sc.nextInt();
+			if(temp >35) {
+				season = "여름" + "폭염경보";
+				//season += 폭염경보
+			}
+			else if(temp>13) {
+				season = "겨울 "+"폭염주의보";
+				//season += 폭염주의보
+			}
+		}
+		else if (month>=9&&month <=11) {
+			season = "가을";
+		}
+		else {
+			season = "해당하는 계절이 없습니다.";
+		}
+		System.out.println(season);
+	}
+	
+	public void practice10() {
+		
+		int a = 3;
+		int b = 5;
+		int c = a++ + --b;
+		
+		System.out.printf("%d %d %d",a,b,c);
+		// 3++ + --5 => 3++ + 4 =7
+		//4
+		//전위연산이 가장먼저 
+				//3++ + --5
+				//3++ + 4(b)
+				//c=7
+				//3++->4(a)
+		
+	}
+	
+	public void practice11() {
+		System.out.println("구구단을 만들것임~");
+		for(int dan = 2; dan <=9 ;dan++) {
+			
+			for( int num =1 ; num<=9;num++) {
+				System.out.printf("%d X %d = %2d ",dan,num,dan*num);
+			}
+			System.out.println();
+		}
+		
+	}
+	
+	public void practice12() {
+		//1부터 20까지 1씩 증가하면서
+		//입력받은 수의 배수의 총 개수 출력
+		//입력받은 수의 합계 출렵
+		//필요한 변수가 뭐뭐 있을까
+		//카운트라는 변수의 갯수
+		//5입력 했다면 5 10 15 20 출력
+		//5의 배수 합계 : 50 출력
+		int count =0;
+		int sum=0;
+		System.out.print("배수 입력 : ");
+		int num = sc.nextInt();
+		String result = " ";
+		
+		for(int i=1; i<=20;i++ ) //{1~20까지 1씩 증가
+			if(i % num ==0) {//배수
+				//System.out.println();
+				result += i +" ";
+				sum =sum +i;
+				count = count +1;
+			}
+			System.out.println(result);
+			System.out.println(num +"의 배수의 합계는 :"+sum);
+	}
+
 }
