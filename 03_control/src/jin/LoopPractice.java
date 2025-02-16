@@ -159,14 +159,14 @@ public class LoopPractice {
 		System.out.print("몇개 찍나요");
 		int input = sc.nextInt();
 		
-		for(int i =1 ;i <=input-1;i++) {
+		for(int i =1 ;i <=input-1;i++) {//위에 삼각
 			for(int j = 1; j<=i ;j++) {
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		
-		for(int i =1; i <=input;i++) {
+		for(int i =1; i <=input;i++) {//아래 삼각
 			for(int j=1; j<=input-i+1;j++) {
 				System.out.print("*");
 			}
@@ -181,10 +181,10 @@ public class LoopPractice {
 	
 		for(int i = 1; i<=input ; i++) {
 			
-			for(int j = 1; j<=input-i ;j++) {
+			for(int j = 1; j<=input-i ;j++) {//왼쪽 빈삼각
 				System.out.print(" ");
 			}
-			for(int j = 1; j<=2*i-1;j++) {
+			for(int j = 1; j<=2*i-1;j++) {//중간 정삼각
 				System.out.print("*");
 			}
 			System.out.println();
@@ -226,5 +226,21 @@ public class LoopPractice {
 		}
 		System.out.println();
 		System.out.println("count : "+count);
+	}
+	public void ex15() {
+		System.out.print("자연수 하나를 입력하세요.");
+		int input = sc.nextInt();
+		int count =0;
+		
+		for(int i =1 ;i<=input;i++) {
+			if(i%2==0||i%3==0) {
+				System.out.print(i+" ");
+				if(i%2==0&&i%3==0) {
+					count++;
+				}
+			}
+		}
+		System.out.println();
+		System.out.print("count :"+ count);
 	}
 }
