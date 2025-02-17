@@ -158,9 +158,7 @@ public class LoopPractice {
 			}
 		}
 	}
-	public void practice12() {}
-	public void practice13() {}
-	public void practice14() {
+	public void practice12() {
 		
 		
 		System.out.print("첫 번째 숫자 : ");

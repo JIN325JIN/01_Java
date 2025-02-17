@@ -4,7 +4,6 @@ public class LoopRun {//실행용 클래스
 
 	public static void main(String[] args) {
 
-		
 		ForExample forEx = new ForExample();//객체생성
 		//forEx.ex1();//호출
 		//forEx.ex2();a~z까지 출력
@@ -15,14 +14,11 @@ public class LoopRun {//실행용 클래스
 		//forEx.ex7();//젤 어렵네 이게
 		//forEx.ex8();//구구단 전부 출력
 		//forEx.ex9();//구구단 역방향
-		forEx.ex10();//7번 다시해서 성공!
+		//forEx.ex10();//7번 다시해서 성공!
 		
-		
-		
-		
-		//WhileExample whileEx = new WhileExample();
+		WhileExample whileEx = new WhileExample();
 		//whileEx.ex1();//분식집메뉴판
-		//whileEx.ex2();//do while문
+		whileEx.ex2();//do while문
 		
 	
 	

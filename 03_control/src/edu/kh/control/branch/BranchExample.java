@@ -10,13 +10,8 @@ public class BranchExample {
 		//1~~10까지 1씩 증가하며 출력하는 반복문 작성
 		//5를 출력하면 반복문 출력
 		//1.2.3.4.5
-		
-		
 		for(int i = 1;i<=10;i++) {
-			
-			
 			System.out.print(i +" ");
-			
 			if(i==5) {
 				break;
 			}
@@ -144,47 +139,6 @@ public class BranchExample {
 			System.out.printf("%d승 : %d 무 : %d 패\n",win,draw,lose);
 		}
 	}
-	public void ex5() {
+	
+}		
 		
-		System.out.println("가위 바위 보 게임~~!!");
-		System.out.print("몇판 하실 라우 :");
-		int round = sc.nextInt();
-		
-		int win =0;
-		int draw =0;
-		int lose = 0;
-		
-		for(int i =1; i<=round;i++) {
-			
-			System.out.printf("%d번째 게임",i);
-			System.out.println("가위 바위 보 중에 하나 입력하삼 :");
-			String input = sc.next();
-			
-			int random = (int)(Math.random()*3+1);//1~3난수
-			String com = null;
-			
-			switch(random) {
-			
-			case 1 : com = "가위";break;
-			case 2 : com = "바위";break;
-			case 3 : com = "보";break;
-			
-		//	System.out.printf("컴퓨터는 %s를 선택했습니다람쥐.",com);
-			
-			
-			}
-			
-						
-			
-			System.out.printf("%d승 : %d 무 :%d 패\n",win,draw,lose);
-
-			
-			
-		}
-		
-		
-		
-		
-	}
-
-}

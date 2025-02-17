@@ -23,9 +23,7 @@ public class Run2 {
 		//lp.practice9();//별 반쪽
 		//lp.practice10();//사다리꼴 반쪽
 		//lp.practice11();//정 삼각형
-		//lp.practice12();//사각형
-		//lp.practice13();//
-		//lp.practice14();//
+		lp.practice12();//첫번째 입력한 숫자부터 두번재 입력한 숫자까지 출력하기
 	}
 
 }
