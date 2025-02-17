@@ -161,7 +161,7 @@ public class ArrayExample1 {
 		System.out.printf("합계는 %d입니다.\n",sum);
 		System.out.printf("평균은 %.2f입니다.\n",(double)sum/score.length);
 		System.out.printf("최고점은 : %d\n",max);
-		System.out.printf("최고점은 : %d\n",min);
+		System.out.printf("최소점은 : %d\n",min);
 	}
 	public void ex5() {
 		String[] arr = {"김밥","써브웨이","햄부기온앤온","백반","국밥","짜장면"};
@@ -215,7 +215,6 @@ public class ArrayExample1 {
 				}
 				if(flag) {
 					System.out.println("존재하지않음");
-				
 				}
 			
 	}
