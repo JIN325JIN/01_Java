@@ -1,6 +1,5 @@
 package jin;
 
-import java.nio.channels.ScatteringByteChannel;
 import java.util.Scanner;
 
 //구현하는곳

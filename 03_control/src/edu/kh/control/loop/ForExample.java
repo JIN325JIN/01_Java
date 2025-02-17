@@ -95,7 +95,7 @@ public class ForExample {//기능제공용 , 메서드만 만들거임
 				sum += i;//합계 누적
 			}
 		}
-		System.out.printf("%s :%d개\n",result,count);
+		System.out.printf("%s :%d개 \n",result,count);
 		System.out.printf("%d의 배수의 합계 : %d",input,sum);
 	}
 	public void ex8() {
@@ -116,4 +116,33 @@ public class ForExample {//기능제공용 , 메서드만 만들거임
 		}
 		
 	}
-}	
+	public void ex10() {
+			//1부터 20까지 1씩 증가하면서
+				//입력받은 수의 배수의 총 개수 출력
+				//입력받은 수의 합계 출렵
+				//필요한 변수가 뭐뭐 있을까
+				//카운트라는 변수의 갯수
+		
+		System.out.print("숫자를 입력해주세요.");
+		int input =sc.nextInt();
+		int sum =0;
+		int count =0;
+		
+		
+		for(int i =1; i<=20 ;i++) {
+			
+			if(i%input==0) {
+				count ++;
+				sum = sum+i;
+				System.out.print(i+ " ");
+			}
+		}
+		System.out.println();
+		System.out.printf("%d의 배수의 갯수는 : %d" ,input,count);
+		System.out.println();
+		System.out.printf("%d의 배수의 합계 : %d \n",input,sum);
+	
+	}
+	
+	
+	}	
