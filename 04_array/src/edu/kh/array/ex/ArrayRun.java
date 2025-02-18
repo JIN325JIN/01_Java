@@ -20,7 +20,7 @@ public class ArrayRun {
 		ArrayExample2 arrayEx2 = new ArrayExample2();
 		//arrayEx2.shallowCopy();//얕은복사
 		//arrayEx2.deepCopy();//깊은 복사
-		arrayEx2.createLottoNumber();//깊은 복사
+		arrayEx2.createLottoNumber();//로또생성기
 		
 	}
 	

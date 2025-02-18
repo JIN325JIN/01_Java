@@ -289,4 +289,6 @@ public class ArrayExample1 {
 			System.out.println("일치하는 문자가 없습니다.");
 		}
 	}
+	
+
 }
