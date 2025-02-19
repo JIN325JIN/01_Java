@@ -143,4 +143,77 @@ public class PracticeService {
 		
 		
 	}
+	public void ex8() {
+		System.out.print("정수 : ");
+		
+		
+		int input= sc.nextInt();
+		
+		if(input<3||(input%2==0)) {
+			System.out.print("다시입력하세요.");
+		}else {
+			int arr[] = new int[input];
+			for(int i =0;i<=input;i++) {
+				
+				if(i>input/2) {
+					s
+				}
+				
+				
+			}
+		}
+		
+		
+	}
+	public void ex9() {
+		int[] arr = new int[10];
+		
+		for(int i =0; i<arr.length;i++) {
+			arr[i]=(int)(Math.random()*10+1);
+		}
+		System.out.print("발생한 난수 :");
+		for(int i =0; i<arr.length;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		
+		
+	}
+	public void ex10() {
+		int [] arr = new int[10];
+		int max=10;
+		int min=1;
+		for(int i=0;i<arr.length;i++) {
+			arr[i] = (int)(Math.random()*10+1);
+		}
+		System.out.print("발생한 난수 :");
+		for(int i =0;i<arr.length;i++) {
+			System.out.print(arr[i] +" ");
+		}
+		for(int i=0;i<arr.length;i++) {
+			
+			
+			if(arr[i]>max) {
+				max = arr[i];
+			}
+			if(arr[i]<min) {
+				min=arr[i];
+			}
+			
+			
+		}
+		System.out.println();
+		System.out.println("최소값 :" +min);
+		System.out.println("최대값 :" +max);
+		
+		
+	}
+	public void ex11() {}
+	public void ex12() {}
+	public void ex13() {}
+	public void ex14() {}
+
+
+
+
+
 }

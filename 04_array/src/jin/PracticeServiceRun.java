@@ -12,7 +12,10 @@ public class PracticeServiceRun {
 		//ps.ex4();
 		//ps.ex5();
 		//ps.ex6();
-		ps.ex7();
+		//ps.ex7();
+		//ps.ex8();
+		//ps.ex9();
+		ps.ex10();
 		
 	}
 
