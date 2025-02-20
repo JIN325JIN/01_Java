@@ -30,9 +30,7 @@ public class People {//사람(국민) 클래스
 	
 	//data의 직접 접근 제한
 	//[접근제한자]public(공공의 )->private(사적인,개인적인)으로 변경
-	
-	
-	
+
 	
 	//[접근제한자] 자료명 변수명;
 	private String name;//이름이라는 속성

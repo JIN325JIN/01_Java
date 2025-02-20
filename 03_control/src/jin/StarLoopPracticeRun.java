@@ -19,7 +19,7 @@ public class StarLoopPracticeRun {
 		//slp.ex10();//-다이아몬드 우측 반갈 별찍기
 		//slp.ex11();//-정삼각 포문 별찍기
 		//slp.ex12();//-네모 포문 별찍기
-		//slp.ex13();//-공배수
+		slp.ex13();//-공배수
 		
 		
 		
