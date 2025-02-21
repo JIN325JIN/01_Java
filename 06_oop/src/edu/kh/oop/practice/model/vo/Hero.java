@@ -2,7 +2,7 @@ package edu.kh.oop.practice.model.vo;
 
 public class Hero {
 	
-	//필드
+	//필드=속성=멤버변수
 	private String nickname;//닉네임
 	private String job;//직업
 	private int hp;//체력
@@ -10,22 +10,8 @@ public class Hero {
 	private int level;//레벨
 	private double exp;//경험치
 	
-	//생성자
-	public Hero() {
-		nickname ="이구역짱";
-		job="전사";
-		hp=200;
-		mp=20;
-		exp =0;		
-		
-		System.out.println("======캐릭터 생성 ======");
-		System.out.printf("%s 직업으로 '%s' 님이 생성 되었습니다.\n",job,nickname);
-		System.out.println("현재 레벨 : "+level);
-		System.out.println("현재 hp : "+hp);
-		System.out.println("현재 mp : "+mp);
-		System.out.println("현재 exp : "+exp);
-		
-	}//기본생성자
+	//기본 생성자
+	public Hero() {}
 	
 	//매개변수생성자
 	public Hero(String nickname,String job,int hp,int mp,int level,double exp) {
@@ -54,7 +40,7 @@ public class Hero {
 		System.out.printf("'%s'은/는 공격을 했다 !!! 현재 경험치 :%.1f\n",nickname,this.exp);
 		
 		if(this.exp>=300) {
-			level++;
+			level++;//level =level+1;
 			System.out.printf("레벨이 올랐습니다! 현재 레벨 : %d\n",level);
 		}			
 	}
@@ -76,7 +62,7 @@ public class Hero {
 	public String toString() {
 		//호출시 해당 메서드를 호출한 객체의 현재 정보를 출력
 
-		return "======='" +nickname + "'님의 정보======\n"+ "- 현재 레벨 : "+level+"\n-현재 hp :"+hp
+		return "======='" +nickname + "'님의 정보======\n" + "- 현재 레벨 : "+level+"\n-현재 hp :"+hp
 				+ "\n- 현재 mp :"+mp +"\n-현재 exp :"+exp;
 		
 	}

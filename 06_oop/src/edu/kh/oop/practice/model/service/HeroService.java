@@ -8,14 +8,9 @@ public class HeroService {
 	public void practice() {
 		
 		//1.매개변수 생성자를 이용하여 첫번재 히어로 객체 생성
-		Hero hero1= new Hero();
-		
-		hero1.setNickname("이구역짱");
-		hero1.setJob("전사");
-		hero1.setHp(200);
-		hero1.setMp(20);
-		hero1.setLevel(1);
-		hero1.setExp(0);
+		//이게 아니라
+		//Hero hero1= new Hero();
+		Hero hero1 = new Hero("이구역짱","전사",200,20,1,0);
 		
 		//2.매개변수 생성자를 이용하여 두번째 히어로 객체 생성
 		Hero hero2= new Hero("zi존위자드","마법사",100,100,1,0);
@@ -28,6 +23,7 @@ public class HeroService {
 		hero1.attack(100);
 		hero1.attack(50.5);
 		hero1.attack(49.5);
+		
 		hero1.dash();
 		hero1.dash();
 		hero1.dash();
