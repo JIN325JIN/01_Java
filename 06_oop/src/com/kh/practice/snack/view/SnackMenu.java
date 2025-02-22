@@ -10,7 +10,6 @@ public class SnackMenu {
 	Scanner sc = new Scanner(System.in);
 	
 	SnackController scr = new SnackController();
-	
 
 	//사용자가 snack객체에 데이터를 저장할수있도록 값을 받고 저장한 값을 출력하는 메서드
 	public void menu() {
@@ -33,12 +32,7 @@ public class SnackMenu {
 		
 		System.out.println(scr.saveData(kind, name, flavor, numOf, price));
 		
-		System.out.println(s.information());
-		
-		
-		
-		
-	}
-	
-	
+		System.out.print("저장한 정보를 확인하시겠습니까? Y/N : ");
+		System.out.println(scr.confirmData());	
+	}	
 }

@@ -13,8 +13,6 @@ public class Snack {
 	private int numOf;//개수
 	private int price;//가격
 	
-	
-	
 	//기본생성자
 	public Snack() {}
 	//매개변수 있는 생성자

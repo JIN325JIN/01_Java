@@ -9,7 +9,5 @@ public class Run {
 		SnackMenu snackmenu = new SnackMenu();//snack객체 생성후
 		
 		snackmenu.menu();//메뉴 실행
-		
 	}
-
 }
