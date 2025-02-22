@@ -8,8 +8,6 @@ public class HeroService {
 	public void practice() {
 		
 		//1.매개변수 생성자를 이용하여 첫번재 히어로 객체 생성
-		//이게 아니라
-		//Hero hero1= new Hero();
 		Hero hero1 = new Hero("이구역짱","전사",200,20,1,0);
 		
 		//2.매개변수 생성자를 이용하여 두번째 히어로 객체 생성

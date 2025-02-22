@@ -1,7 +1,5 @@
 package com.kh.practice.snack.controller;
 
-import java.awt.Menu;
-
 import com.kh.practice.snack.model.vo.Snack;
 import com.kh.practice.snack.view.SnackMenu;
 

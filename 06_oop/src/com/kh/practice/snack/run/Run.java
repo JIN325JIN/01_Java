@@ -6,9 +6,9 @@ public class Run {
 
 	public static void main(String[] args) {
 		
-		SnackMenu sm = new SnackMenu();//snack객체 생성후
+		SnackMenu snackmenu = new SnackMenu();//snack객체 생성후
 		
-		sm.menu();//메뉴 실행
+		snackmenu.menu();//메뉴 실행
 		
 	}
 
