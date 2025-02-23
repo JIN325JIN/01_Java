@@ -32,7 +32,13 @@ public class SnackMenu {
 		
 		System.out.println(scr.saveData(kind, name, flavor, numOf, price));
 		
-		System.out.print("저장한 정보를 확인하시겠습니까? Y/N : ");
-		System.out.println(scr.confirmData());	
+		System.out.print("저장한 정보를 확인하시겠습니까? y/n : ");
+		String ch = sc.next();
+		
+		if(ch.equals("y")) {
+			System.out.println(scr.confirmData());
+		}
+		
+			
 	}	
 }

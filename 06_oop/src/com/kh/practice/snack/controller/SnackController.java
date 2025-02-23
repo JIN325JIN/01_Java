@@ -1,7 +1,5 @@
 package com.kh.practice.snack.controller;
 
-import java.util.Scanner;
-
 import com.kh.practice.snack.model.vo.Snack;
 import com.kh.practice.snack.view.SnackMenu;
 
@@ -26,13 +24,7 @@ public class SnackController {
 	}	
 	//저장된 데이터를 반환하는 메서드
 	public String confirmData() {
-		
-		//String ch = sc.next();
-	//	
-	//	if(ch.charAt(ch)=='N'||ch.charAt(ch)=='n') {
-		//	return 'N';
-		//}if(ch.charAt(ch)=='Y'||ch.charAt(ch)=='y') {
-			return "\n"+s.getName()+"("+s.getKind()+" - "+s.getFlavor()+") "+s.getNumOf()+"개 "+s.getPrice()+"원 ";
-		//}
+		return s.information();
 	}
 }
+

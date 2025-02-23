@@ -59,7 +59,5 @@ public class Snack {
 	//담긴 데이터를 리턴하는 메서드
 	public String information() {
 		return  kind + "(" + name + "-" + flavor + ") "+ numOf + "개" + price + "원";
-	}
-	
-	
+	}	
 }
