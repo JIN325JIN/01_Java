@@ -63,7 +63,7 @@ public class Run {
 		
 		//3명의 직원의 연봉 평균
 		System.out.println("=================================================");
-		System.out.printf("직원들의 연봉의 평균 %d 원",sum/3);
+		System.out.printf("직원들의 연봉의 평균 %d 원",sum/emp.length);
 		
 		
 	}
