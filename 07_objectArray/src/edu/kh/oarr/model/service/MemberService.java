@@ -209,7 +209,7 @@ public class MemberService {
 		else {
 			return "이름 : "+loginMember.getMemberName()+"\n 아이디 :"+loginMember.getMemberId()+"\n나이 :"+loginMember.getMemberAge()+"\n지역 :"+loginMember.getRegion();
 		
-		}
+		}0
 	}
 	//회원 정보 수정 메서드
 	public int updateMember() {
