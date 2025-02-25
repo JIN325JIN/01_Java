@@ -26,7 +26,7 @@ public class Run {
 		bp.setYear(2000);
 		bp.setPrice(100000);
 		bp.printInfo();
-		bp.checkKeyboard();
+		bp.checkKeyboard(true);
 	}
 
 }
