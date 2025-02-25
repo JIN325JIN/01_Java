@@ -21,6 +21,7 @@ public class Run {
 		//2. 최대 10명의 사원 정보를 기록할 수 있게 객체 배열을 할당하고 반복문을 사용하여 키보드로 사원 정보를 입력
 		//받도록 구현 2명 정도의 사원 정보를 입력 받아 각 객체에 저장하고 현재까지 기록된사원들의 정보 출력
 		Employee[] arr = new Employee[10];
+		
 		int count =0;
 		
 		while(true) {
@@ -49,16 +50,13 @@ public class Run {
 			if(input.equals("N")) {
 				break;
 			}
-			
 		}
+		//향상된 포문 어렵다.
 		for(Employee emp :arr) {
 			if(emp==null) {
 				break;
 			}
 			System.out.println(emp.information());
 		}
-		
-		
 	}
-
 }
