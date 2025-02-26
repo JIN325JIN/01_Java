@@ -10,6 +10,13 @@ public class Prison implements ManagementSystem {
 	//매개변수로 전달받은 size를 이용하여 Prisoner 객체배열을 size 크기로 생성한다.
 	// prisonerCount는 0으로 초기화한다.
 	
+	public Prison(int size) {
+		prisoners = new Prisoner[size];
+		prisonerCount=0;
+	}
+	
+	
+	
 	public Prisoner[] getPrisoners() {
 		return prisoners;
 	}
@@ -30,10 +37,7 @@ public class Prison implements ManagementSystem {
 	}
 
 
-	public Prison(int prisonerCount) {
-		super();
-		this.prisonerCount = prisonerCount;
-	}
+	
 
 
 	@Override
@@ -55,7 +59,9 @@ public class Prison implements ManagementSystem {
 	public void displayAllPersons() {
        //전체 수감자 명단을출력하는 기능		
 		System.out.println("전체 수감자 명단 : ");
-		System.out.println("ID :" +id+",이름"+name+",죄목 : "+crime);
+		for(int i =0; i<prisonerCount;i++) {
+			System.out.println(prisoners[i].getInfo());
+		}
 	}
 	
 	

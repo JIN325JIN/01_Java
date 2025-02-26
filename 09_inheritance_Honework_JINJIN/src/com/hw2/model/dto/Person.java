@@ -5,10 +5,6 @@ public abstract class Person {
 	protected String id;//고유번호
 	protected String name;//이름
 	
-	
-	public Person() {}
-	
-	
 	public Person(String id, String name) {
 		super();
 		this.id = id;

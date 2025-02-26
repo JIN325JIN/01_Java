@@ -12,7 +12,10 @@ public class Company implements ManagementSystem {
 	//매개변수로 전달받은 size를 이용하여
 	//Employee 객체배열을 size 크기로 생성한다.
 	//employeeCount는 0으로 초기화한다.
-	
+	public Company(int size) {
+		employees = new Employee[size];
+		employeeCount=0;
+	}
 	
 	
 	public Employee[] getEmployees() {
@@ -28,11 +31,6 @@ public class Company implements ManagementSystem {
 	}
 
 	public void setEmployeeCount(int employeeCount) {
-		this.employeeCount = employeeCount;
-	}
-
-	public Company(int employeeCount) {
-		super();
 		this.employeeCount = employeeCount;
 	}
 
@@ -52,6 +50,10 @@ public class Company implements ManagementSystem {
 	@Override
 	public void displayAllPersons() {
 		//전체 직원 명단을 출력하는 기능
+		System.out.println("전체 직원 명단.");
+		for (int i =0; i<employeeCount;i++) {
+			System.out.println(employees[i].getInfo());
+		}
 	}
 
 }
