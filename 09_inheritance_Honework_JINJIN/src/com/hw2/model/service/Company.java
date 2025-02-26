@@ -51,6 +51,7 @@ public class Company implements ManagementSystem {
 	public void displayAllPersons() {
 		//전체 직원 명단을 출력하는 기능
 		System.out.println("전체 직원 명단.");
+		
 		for (int i =0; i<employeeCount;i++) {
 			System.out.println(employees[i].getInfo());
 		}

@@ -7,9 +7,9 @@ public class Prison implements ManagementSystem {
 
 	private Prisoner[] prisoners;//전체 수용자 저장용
 	private int prisonerCount;//수용자 수
+	
 	//매개변수로 전달받은 size를 이용하여 Prisoner 객체배열을 size 크기로 생성한다.
 	// prisonerCount는 0으로 초기화한다.
-	
 	public Prison(int size) {
 		prisoners = new Prisoner[size];
 		prisonerCount=0;
