@@ -10,14 +10,15 @@ public class Main {
 		int H = sc.nextInt();
 		int M = sc.nextInt();
 		
-		if(M>60) {
-			H+=1;
-		}else if(H>24) {
-			H=0;
+		if(M>=45) {
+			System.out.printf("%d %d",H,M-45);
+		}else {
+			if(H>=1) {
+				System.out.printf("%d %d",H-1,M+15);
+			}
+			else if(H==0) {
+				System.out.printf("%d %d",H+23,M+15);
+			}
 		}
-		System.out.print(H);
-		System.out.print(" ");
-		System.out.print(M-45);
 	}
-
 }
