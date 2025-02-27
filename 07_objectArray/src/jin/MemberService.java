@@ -58,24 +58,25 @@ public class MemberService {
 		
 	}
 	public void signUp() {
-		System.out.println("\n=====1. 회원가입 =====")
+		System.out.println("\n=====1. 회원가입 =====");
 	}
 	public void login() {
-		System.out.println("\n=====2.로그인 =====")
+		System.out.println("\n=====2.로그인 =====");
 		System.out.print("아이디 :");
 		String memberId = sc.next();
 		System.out.print("비밀번호 : ");
 		String memberPw = sc.next();
 		
-		if()
+		//if()
 	}
 	public void selectregion() {
-		System.out.println("\n=====3. 회원 검색 (지역) =====")
+		System.out.println("\n=====3. 회원 검색 (지역) =====");
 	}
 	
 	public void updatemember() {
-		System.out.println("\n=====4.. 회원 정보 수정 =====")
+		System.out.println("\n=====4.. 회원 정보 수정 =====");
 	}
 	public void selcetmember() {
-		System.out.println("\n=====5.. 회원 정보 조회 =====")}
+		System.out.println("\n=====5.. 회원 정보 조회 =====");
+		}
 }

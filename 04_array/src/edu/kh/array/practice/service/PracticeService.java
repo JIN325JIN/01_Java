@@ -333,7 +333,7 @@ public class PracticeService {
 				str[i]=sc.nextLine();	
 		}
 		System.out.println("더 값을 입력하시겠습니까? YES or NO");
-		String ch = sc.next().charAt(0);
+		char ch = sc.next().charAt(0);
 		if(ch=='y') {//입력한 값이 y와 같다면
 			System.out.print("더 입력하고 싶은 개수 : ");
 			int input1 = sc.nextInt();
