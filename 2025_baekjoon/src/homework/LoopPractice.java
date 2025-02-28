@@ -1,7 +1,7 @@
 package homework;
 
 import java.util.Scanner;
-
+//스터디 과제 
 public class LoopPractice {
 
 	Scanner sc = new Scanner(System.in);
@@ -32,7 +32,6 @@ public class LoopPractice {
 		for(int i = 0; i<input;i++) {
 			System.out.print(input-i +" ");
 		}
-		
 	}
 	
 	public void practice3() {
@@ -74,21 +73,119 @@ public class LoopPractice {
 		}
 	
 	}
+	
 	public void practice5() {
 		System.out.print("숫자 : ");
 		int input = sc.nextInt();
-		
+		System.out.printf("====%d단====\n",input);
 		
 		for(int i=1 ;i<=9;i++) {
 			System.out.println(input+"*"+i+ "="+ input*i);
 		}
+	}
+	
+	public void practice6() {
+		System.out.print("숫자 : ");
+		int input = sc.nextInt();
 		
+		if(input<2&&input>9) {
+			System.out.println("2~9사이 숫자만 입력해주세요.");
+		}else {
+			for(int i =input;i<=9;i++) {
+				System.out.printf("====%d단====\n",i);
+					
+					for(int j=1;j<=9;j++) {
+				
+						System.out.printf("%d * %d = %d\n" ,i,j,i*j);
+					}
+				}
+			}
+		 
+	
+	
+	}
+	
+	public void practice7() {
+		System.out.print("정수입력 : ");
+		
+		int input = sc.nextInt();
+		
+		for(int i =0; i<input;i++) {
+			for(int j=0; j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+	
+	public void practice8() {
+		System.out.print("정수입력 : ");
+		
+		int input = sc.nextInt();
+		
+		for(int i=0 ;i<input;i++) {
+			
+			for(int j =0 ;j< input-i;j++) {
+				
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+	}
+
+	public void practice9() {
+		System.out.print("정수입력 : ");
+		
+		int input = sc.nextInt();
+		
+		for(int i = 1; i<=input;i++) {
+			for(int j=1;j<=input-i;j++) {
+				System.out.print(" ");
+			}
+			for(int j=1;j<=i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 		
 	}
 
+	public void practice10() {
+		System.out.print("정수입력 : ");
+		
+		int input = sc.nextInt();
 
-
-
-
-
+			for(int i= 1;i<=input;i++) {
+				for(int j=1;j<=i;j++) {
+					System.out.print("*");
+				}	
+				System.out.println(" ");
+			}
+			for(int i=1;i<input;i++) {
+				for(int j= 1;j<=input-i;j++) {
+					System.out.print("*");
+				}
+				System.out.println(" ");
+				}
+		
+	}
+	
+	public void practice13() {
+		System.out.print("자연수를 하나 입력하세요 :");
+		int input = sc.nextInt();
+		int count=0;
+		for(int i =1; i<=input;i++) {
+			if(i%2==0||i%3==0) {
+				System.out.print(i+" ");
+			}
+			if((i%2==0)&&(i%3==0)) {
+				count =count+1;
+			}
+			
+		}
+		System.out.println();
+		System.out.println("count :"+count);
+		
+		
+	}
 }

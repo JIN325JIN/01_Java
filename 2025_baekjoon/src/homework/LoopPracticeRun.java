@@ -1,7 +1,7 @@
 package homework;
 
 public class LoopPracticeRun {
-
+//스터디 과제
 	public static void main(String[] args) {
 
 		LoopPractice lp = new LoopPractice();
@@ -9,7 +9,17 @@ public class LoopPracticeRun {
 		//lp.practice2();
 		//lp.practice3();
 		//lp.practice4();
-		lp.practice5();
+		//lp.practice5();
+		//lp.practice6();
+		//lp.practice7();
+		//lp.practice8();
+		//lp.practice9();
+		lp.practice10();//하는중
+		//lp.practice11();//해야돼
+		//lp.practice12();//해야돼
+		//lp.practice13();
+	
+	
 	
 	}
 
