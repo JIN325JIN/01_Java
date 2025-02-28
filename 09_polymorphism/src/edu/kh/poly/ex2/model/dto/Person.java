@@ -2,12 +2,9 @@ package edu.kh.poly.ex2.model.dto;
 
 public class Person extends Animal {
 
-	
 	private String name;
-	
-	
+
 	public Person() {}
-	
 	
 	public Person(String type, String eatType, String name) {
 		super(type, eatType);

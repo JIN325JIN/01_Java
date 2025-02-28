@@ -140,16 +140,6 @@ public class PolyService {
 		System.out.println(arr[1] instanceof Spark); //false(카 타입 테슬라 객체와 스파크는 관계 없음)
 		System.out.println(arr[1] instanceof Car); //true (테슬라 객체와 카타입은 상속관계)
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 	//다형성 중 다운캐스팅 확인 예제

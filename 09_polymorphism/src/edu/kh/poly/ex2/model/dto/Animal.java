@@ -8,7 +8,6 @@ public abstract class Animal {
 	//객체로 생성하여 사용하기 위한 목적이 아님
 	
 	
-	
 	//속성 
 	private String type;//종 과
 	private String eatType;//식성 

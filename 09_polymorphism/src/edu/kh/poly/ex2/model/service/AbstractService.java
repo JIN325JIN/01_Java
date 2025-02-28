@@ -6,8 +6,6 @@ import edu.kh.poly.ex2.model.dto.Person;
 
 public class AbstractService {
 	
-	
-	
 	public void ex1() {
 		
 		//Animal 객체 생성 
@@ -46,11 +44,5 @@ public class AbstractService {
 		a2.breath();
 		a2.eat();
 		a2.move();
-		
-		
-		
-		
-		
-		
 	}
 }

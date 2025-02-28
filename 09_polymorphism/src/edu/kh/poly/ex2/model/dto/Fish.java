@@ -2,7 +2,6 @@ package edu.kh.poly.ex2.model.dto;
 
 public class Fish extends Animal{
 
-	
 	public Fish() {}
 	
 	public Fish(String type, String eatType) {
@@ -29,7 +28,5 @@ public class Fish extends Animal{
 	public String toString() {
 		return "Fish : " + super.toString();
 	}
-	
-	
-	
+
 }

@@ -3,8 +3,14 @@ package homework;
 public class LoopPracticeRun {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		LoopPractice lp = new LoopPractice();
+		//lp.practice1();
+		//lp.practice2();
+		//lp.practice3();
+		//lp.practice4();
+		lp.practice5();
+	
 	}
 
 }
