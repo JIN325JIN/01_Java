@@ -5,7 +5,7 @@ import inheritance.com.hw2.model.dto.Employee;
 public abstract class Company implements ManagementSystem{
 	
 	
-	Employee[] employees= new Employee[];
+	//Employee[] employees= new Employee[];
 	
 
 }
