@@ -12,7 +12,7 @@ public class Employee extends Person {
 		super(age, height, weight);
 		this.salary = salary;
 		this.dept = dept;
-		this.name =name;
+		this.name =name;//직접
 	}
 
 	@Override

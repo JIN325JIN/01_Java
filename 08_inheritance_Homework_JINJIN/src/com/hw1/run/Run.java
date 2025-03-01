@@ -20,9 +20,9 @@ public class Run {
 			System.out.println(std[i].information());
 		}
 		System.out.println("=============================================================");
-		Employee employee = new Employee();
-		Employee[] arr = new Employee[10];
 		
+		Employee[] arr = new Employee[10];
+		int count=0 ;
 		while(true) {
 			System.out.print("이름 : ");
 			String name = sc.next();
@@ -37,14 +37,21 @@ public class Run {
 			System.out.print("부서 :");
 			String dept =sc.next();
 			
+			arr[count]= new Employee(name,age,height,weight,salary,dept);
+			
+			System.out.print("계속 추가하겠습니까 ? y/n");
+			char input = sc.next().charAt(0);
+			
+			if(input=='y') {
+				count =count+1;
+				System.out.println(count);
+			}
+			if(input !='y') {
+				for(int i =0; i<=count;i++) {
+					System.out.println(arr[i].information());				
+				}
+				break;
+			}
 		}
 	}
-
-	
-	
-	
-	
-	
-	
-	
 }

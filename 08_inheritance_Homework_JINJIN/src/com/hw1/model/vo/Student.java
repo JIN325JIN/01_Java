@@ -11,7 +11,7 @@ public class Student extends Person{
 		super(age, height, weight);
 		this.grade = grade;
 		this.major = major;
-		this.name= name;
+		this.name= name;//이름 직접
 	}
 	@Override
 	public String information() {
