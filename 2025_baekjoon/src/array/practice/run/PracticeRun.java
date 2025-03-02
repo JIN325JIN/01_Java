@@ -16,11 +16,11 @@ public class PracticeRun {
 		//practiceservice.practice7();
 		//practiceservice.practice8();//해야돼
 		//practiceservice.practice9();//완료
-		practiceservice.practice10();
+		//practiceservice.practice10();//하는중
 		//practiceservice.practice11();
 		//practiceservice.practice12();
-		//practiceservice.practice13();
-		//practiceservice.practice14();
+		//practiceservice.practice13();//중복된 갯수 빼기 해야돼
+		practiceservice.practice14();
 	}
 
 }
