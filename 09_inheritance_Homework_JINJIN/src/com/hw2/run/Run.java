@@ -1,6 +1,7 @@
 package com.hw2.run;
 
 import com.hw2.model.service.Company;
+import com.hw2.model.service.Prison;
 
 public class Run {
 
@@ -14,7 +15,7 @@ public class Run {
 		
 		//prison의 생성자를 이용하여 10칸 짜리 prisoner 객체 배열 생성하는 prison객체 생성후
 		//매니지먼트시스템 자료형의 프리즌에 주소를 저장
-		
+		Prison prison = new Prison(5);
 		
 		//2명정도 직원 새로 등록하기
 		

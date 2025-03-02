@@ -45,6 +45,14 @@ public class Company implements ManagementSystem {
 	public void removePerson(String id) {
 		//매개변수로 전달받은 id와 일치하는 직원을 찾으면, 해당 직원을 삭제하고 관련 정보를 출력. 일치하는 id가
 		//없다면 해당 id를 가진 직원을 찾을 수 없다는 메시지를 출력
+		for(int i =0; i<employeeCount;i++) {
+			if(id.equals(employees[i])) {
+				System.out.println(employees);
+			}else {
+				System.out.println("일치하는 직원을 찾을수 없습니다.");
+			}
+		}
+		
 	}
 
 	@Override
