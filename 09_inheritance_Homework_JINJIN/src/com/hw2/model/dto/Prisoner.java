@@ -1,6 +1,6 @@
 package com.hw2.model.dto;
 
-public abstract class Prisoner extends Person {
+public class Prisoner extends Person {
 	
 	private String crime;//죄목
 
