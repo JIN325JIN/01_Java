@@ -6,7 +6,6 @@ public class LoopPractice {
 
 	Scanner sc = new Scanner(System.in);
 			
-			
 	/**
 	 * 1부터 입력까지의 숫자 출력
 	 */
@@ -77,7 +76,6 @@ public class LoopPractice {
 		}else {
 			System.out.println("1이상의 숫자를 입력해주세요.");
 		}
-	
 	}
 	
 	/**
@@ -236,11 +234,8 @@ public class LoopPractice {
 			if((i%2==0)&&(i%3==0)) {
 				count =count+1;//공배수일때 카운트+1
 			}
-			
 		}
 		System.out.println();
 		System.out.println("count :"+count);
-		
-		
 	}
 }

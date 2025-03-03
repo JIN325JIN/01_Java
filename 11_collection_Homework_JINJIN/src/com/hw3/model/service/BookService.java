@@ -3,7 +3,10 @@ package com.hw3.model.service;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
 
 import com.hw3.model.dto.Book;
 
@@ -56,7 +59,7 @@ public class BookService {
 				break;
 				case 7: 
 				break;
-				case 8:
+				case 8:recommandBook();
 				break;
 				case 0:System.out.println("프로그램 종료.");
 				break;
@@ -97,5 +100,9 @@ public class BookService {
 			}
 		}
 	}
-	
+	public void recommandBook() {
+		int randomBook = (int) (Math.random()*bookList.size());
+		Book recommand = bookList.get(randomBook);
+		System.out.println("추천도서 이름은 :" +recommand.getName() );
+	}
 }
