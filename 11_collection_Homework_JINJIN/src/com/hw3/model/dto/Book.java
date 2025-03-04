@@ -64,7 +64,4 @@ public class Book {
 		return num + "번 도서 :" + "[도서제목 : " + name + "/ 도서 저자 :" + author + "/ 도서가격 :" + price + "/ 출판사 :"
 				+ publisher + "]";
 	}
-	
-	
-	
 }
