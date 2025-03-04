@@ -52,11 +52,11 @@ public class Prison implements ManagementSystem {
 				prisoners[i]=null;
 				
 				
-				for (int j = i; j < prisonerCount - 1; j++) {
-					prisoners[j] = prisoners[j + 1];
+				for (int j = i; j < prisonerCount - 1; j++) {//삭제된 위치 i 부터 끝까지
+					prisoners[j] = prisoners[j + 1];//지금 null이니까 한칸씩 뒤에있는 애를 앞으로 땡겨준다.
 				}
 
-				prisoners[--prisonerCount] = null;
+				prisoners[--prisonerCount] = null;//마지막에 중복되어있는애를 지운다.
 				return;
 			}
 			

@@ -150,8 +150,12 @@ public class PracticeService {
 		System.out.print("정수 : ");		
 		int input = sc.nextInt();
 		
-		if(input>=3 && input%3==0) {
+		if(input<3 && input%3!=0) {
 			
+			System.out.println("다시 입력하세요.");
+			
+		}
+		else {
 			int[] arr = new int[input+(input/2)];
 
 			//for(int i = 0; i<input+(input/2;)i++) {
@@ -159,9 +163,8 @@ public class PracticeService {
 				//System.out.println(arr[i]);
 			//}
 		}
-		else {
-		System.out.println("다시 입력하세요.");
-		}
+		
+		
 		
 		
 	}
@@ -211,8 +214,6 @@ public class PracticeService {
 				System.out.println("최대값 : "+ max );
 			}
 		}
-		
-		
 	}
 	
 	public void practice11() {}
@@ -220,20 +221,41 @@ public class PracticeService {
 	public void practice12() {}
 	
 	public void practice13() {
+		//문자 배열에 문자열 넣은 후에 제외하고 출력하기
 		System.out.print("문자열 : ");
 		String input = sc.next();
+		
 		int count = 0;
 		char[] ch = new char[input.length()];
 		
 		for(int i = 0; i<ch.length;i++) {
-			
 			ch[i]=input.charAt(i);
+		}
+
+		System.out.print("문자열에 있는 문자 : ");
+		
+		for(int i = 0; i<ch.length;i++) {
 			
-			
-			if(input.charAt(0)==ch[i]) {
+			boolean flag=true;
+			for(int j=0;j<i;j++) {
+				
+				if(ch[j]==ch[i]) {
+					flag=false;
+					break;
+				}
+			}
+			if(flag) {
 				count++;
+				System.out.print(ch[i]);
 			}
 			
+		}
+		System.out.println("\n"+count);
+		
+/*
+		if(input.charAt(i)==ch[i]) {
+				count++;
+			}
 			
 			if(i==ch.length-1) {
 				System.out.println(ch[i]);
@@ -243,8 +265,49 @@ public class PracticeService {
 			}
 		}
 		System.out.print("문자 개수 :"+count);//중복제거 안한 문자갯수
+ */
 	}
 
+	public void practice132() {
+		//애초에 문자 배열에 중복 제거후 저장하는 방법
+		System.out.print("문자열 : ");
+		String input = sc.next();
+		
+		
+		char[] ch = new char[input.length()];
+		
+		int count = 0;//저장해야할 배열의 크기
+		
+		for(int i =0;i<input.length();i++) {
+			char tempChar = input.charAt(i);
+			boolean flag = false;
+			for(int j = 0; j <count;j++) {
+
+				if(ch[j]==input.charAt(i)) {//중복
+					flag= true;
+					break;
+				}
+			}			
+			if(!flag) {
+				ch[count]=tempChar;
+				count++;
+			}
+			
+		}
+		
+		for(int i =0; i<count;i++) {
+			System.out.printf("%c ",ch[i]);
+		}
+		System.out.print("\n문자개수 : "+count);
+			
+			
+		
+	}
+	
+	
+	
+	
+	
 	public void practice14() {
 		System.out.print("배열의 크기를 입력하세요 .");
 		int input = sc.nextInt();

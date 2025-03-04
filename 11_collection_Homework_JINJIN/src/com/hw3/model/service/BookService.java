@@ -162,10 +162,6 @@ public class BookService {
 					default :System.out.println("0~4까지의 번호만 입력가능");
 							
 					}
-					
-					
-					
-					
 				}
 			}
 			
@@ -173,10 +169,6 @@ public class BookService {
 				System.out.println("일치하는 도서 번호가 없습니다.");
 			}
 			System.out.println("수정완료");
-
-			
-			
-		
 	}
 	public String addFavorite() {
 		System.out.println("====즐겨 찾기 도서등록====");

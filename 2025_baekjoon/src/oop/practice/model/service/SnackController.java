@@ -21,7 +21,7 @@ public class SnackController {
 		s.setNumOf(numOf);
 		s.setPrice(price);
 		
-		return "저장완료되었습니다.\n"+"저장된 정보를 확인하시겠습니까? (y/n) :";
+		return "저장완료되었습니다.\n";
 		
 		}
 	/**
