@@ -9,7 +9,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import com.toyFactory.model.dto.Toy;
-import com.yoonjin.model.dto.Boyfriend;
+
 
 public class ToyFactory implements Comparable<Toy>{
 
@@ -22,7 +22,7 @@ public class ToyFactory implements Comparable<Toy>{
 	
 	private Set<Toy> toyset = new HashSet<Toy>();
 	
-	private Map<Integer, String > material = new HashMap<Integer, String>();
+	private Map<Integer, String > materialMap = new HashMap<Integer, String>();
 	
 	//재료 추가하는 매서드
 	//add meterials 메서드 작성
@@ -31,23 +31,25 @@ public class ToyFactory implements Comparable<Toy>{
 	//애드매태리얼즈 (전달인자가 몇개인지 정해져있지않음)
 	//->가변인자 : 자료형...변수명 (int ...nums)
 	
-	
 	public ToyFactory() {
-		toyset.add(new Toy("미미롱래그",8,36000,"분홍색","19950805","면직물"));
-		toyset.add(new Toy("허기워기",5,12000,"파란색","19940312","면직물,플라스틱"));
-		toyset.add(new Toy("키시미시",5,15000,"분홍색","19940505","면직물,플라스틱"));
-		toyset.add(new Toy("킷냅",8,27000,"보라색","19960128","면직물,플라스틱"));
-		toyset.add(new Toy("파피",12,57000,"빨간색","19931225","면직물,플라스틱,고무"));
+		//기본등록재료
+		materialMap.put(1, "면직물");
+		materialMap.put(2, "플라스틱");
+		materialMap.put(3, "유리");
+		materialMap.put(4, "고무");
+		
+		toyset.add(new Toy("미미롱래그",8,36000,"분홍색","19950805", addMeterials(1,4)));
+		toyset.add(new Toy("허기워기",5,12000,"파란색","19940312",addMeterials(1,2)));
+		toyset.add(new Toy("키시미시",5,15000,"분홍색","19940505",addMeterials(1,2)));
+		toyset.add(new Toy("킷냅",8,27000,"보라색","19960128",addMeterials(1,2)));
+		toyset.add(new Toy("파피",12,57000,"빨간색","19931225",addMeterials(1,2,4)));
 	}
-	
-	
-	public ToyFactory(Scanner sc, Set<Toy> toyset, Map<Integer, String> material) {
+	public ToyFactory(Scanner sc, Set<Toy> toyset, Map<Integer, String> materialMap) {
 		super();
 		this.sc = sc;
 		this.toyset = toyset;
-		this.material = material;
+		this.materialMap = materialMap;
 	}
-
 	public void displayMenu() {
 		try {
 			int menuNum = 0;
@@ -113,10 +115,7 @@ public class ToyFactory implements Comparable<Toy>{
 		String color = sc.next();
 		System.out.println("제조일 (YYYY MM DD형식으로 입력) :");
 		String year =sc.next();
-		
-		
 	}
-	
 	public void deleteToy() {
 		
 	}
@@ -128,14 +127,14 @@ public class ToyFactory implements Comparable<Toy>{
 			System.out.println(toy);
 		}
 	}
-	
-	public void addMeterials() {
+	/*
+	public Set <String> addMeterials(Integer...material ) {
 		System.out.println("<재료 추가>");
 		System.out.println("====현재 등록된 재료 ====");
-		material.put(1, "면직물");
-		material.put(2, "플라스틱");
-		material.put(3, "유리");
-		material.put(4, "고무");
+		//material.put(1, "면직물");
+		//material.put(2, "플라스틱");
+		//material.put(3, "유리");
+		//material.put(4, "고무");
 	
 		System.out.println(material);
 		
@@ -146,7 +145,7 @@ public class ToyFactory implements Comparable<Toy>{
 		
 		
 		}
-
+*/
 
 	
 	@Override
