@@ -127,8 +127,8 @@ public class ToyFactory implements Comparable<Toy>{
 			System.out.println(toy);
 		}
 	}
-	/*
-	public Set <String> addMeterials(Integer...material ) {
+	
+	public Set <String> addMeterials(/*Integer...materials*/ ) {
 		System.out.println("<재료 추가>");
 		System.out.println("====현재 등록된 재료 ====");
 		//material.put(1, "면직물");
@@ -136,7 +136,7 @@ public class ToyFactory implements Comparable<Toy>{
 		//material.put(3, "유리");
 		//material.put(4, "고무");
 	
-		System.out.println(material);
+		//System.out.println(materials);
 		
 		System.out.print("재료 고유 번호 (key)입력 :");
 		int materialKey = sc.nextInt();
@@ -145,7 +145,7 @@ public class ToyFactory implements Comparable<Toy>{
 		
 		
 		}
-*/
+
 
 	
 	@Override
