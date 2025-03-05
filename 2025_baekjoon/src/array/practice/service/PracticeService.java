@@ -150,23 +150,23 @@ public class PracticeService {
 		System.out.print("정수 : ");		
 		int input = sc.nextInt();
 		
-		if(input<3 && input%3!=0) {
-			
+		if(input< 3 || input%2==0) {
 			System.out.println("다시 입력하세요.");
 			
 		}
 		else {
-			int[] arr = new int[input+(input/2)];
+			int[] arr = new int[input];
 
-			//for(int i = 0; i<input+(input/2;)i++) {
-			//	arr[i] = i+1;
-				//System.out.println(arr[i]);
-			//}
+			for(int i=0;i<input;i++) {
+				if(i<=(input/2)) {
+					System.out.print(i+1+ " ");//1,2,3
+				}
+				else {
+					System.out.print((input-i) +" ");
+				}
+			}
+			
 		}
-		
-		
-		
-		
 	}
 	
 	/**
@@ -205,18 +205,41 @@ public class PracticeService {
 		
 		for(int i =0; i<arr.length;i++) {
 			
-			min = arr[i];
-			max = arr[i];
-			if(min<=arr[i]) {
+			if(min<arr[i]) {
+				min = arr[i];
 				System.out.println("최소값 : "+ min);
 			}
 			else if(max>arr[i]) {
+				max = arr[i];
 				System.out.println("최대값 : "+ max );
 			}
 		}
 	}
 	
-	public void practice11() {}
+	public void practice11() {
+		int[] arr = new int[10];
+		
+		for(int i=0; i<arr.length;i++) {
+			arr[i] = (int)(Math.random()*10+1);
+		}	
+		
+		System.out.print(Arrays.toString(arr));//열개가 랜덤으로 잘 들어감
+			
+			for(int i=0; i<arr.length;i++) {
+				boolean flag =false;
+				for(int j =0; j<i;j++) {
+					arr[i] = arr[j];//여기 코드가 이상함
+					flag =true;
+					break;
+				}
+				if(flag) {
+					i--;
+				}	else {
+					System.out.print(arr[i] +" ");
+				}
+			}
+	}
+	
 	
 	public void practice12() {}
 	
@@ -304,10 +327,6 @@ public class PracticeService {
 		
 	}
 	
-	
-	
-	
-	
 	public void practice14() {
 		System.out.print("배열의 크기를 입력하세요 .");
 		int input = sc.nextInt();
@@ -316,7 +335,7 @@ public class PracticeService {
 		for(int i =0;i<arr.length;i++) {
 			
 			System.out.printf("%d번째 문자열 :",i+1);
-			
+			sc.nextLine();
 			arr[i] = sc.next();
 		}
 		sc.nextLine();
@@ -326,7 +345,7 @@ public class PracticeService {
 		do {
 			System.out.print("더 입력하고 싶은 갯수 : ");
 			int input2 = sc.nextInt(); 
-			
+			//여기까지함
 			String[] arr2= new String[input+input2];
 			
 			for(int i =0; i<arr2.length;i++) {

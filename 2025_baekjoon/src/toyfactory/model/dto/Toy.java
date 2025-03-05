@@ -2,7 +2,7 @@ package toyfactory.model.dto;
 
 import java.util.Objects;
 import java.util.Set;
-
+// getMaterialsAsString() 모르겠음
 public class Toy {
 	
 		//장난감의 속성 

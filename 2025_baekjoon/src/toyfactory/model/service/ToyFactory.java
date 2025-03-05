@@ -12,7 +12,7 @@ import java.util.Scanner;
 import java.util.Set;
 
 import toyfactory.model.dto.Toy;
-
+//displayToysByAge() 모르겠음
 public class ToyFactory {
 		private Scanner sc = new Scanner(System.in);//입력받기 위한 스캐너
 
@@ -103,7 +103,7 @@ public class ToyFactory {
 						System.out.println("잘못된 입력입니다. 다시 입력해주세요!");
 					}
 
-				} catch (Exception e) {
+				} catch (Exception e) {//ioexception 방지
 					System.out.println("알맞은 입력을 해라...(경고)..");
 					e.printStackTrace();
 
@@ -229,7 +229,7 @@ public class ToyFactory {
 			System.out.print("삭제할 장난감의 이름을 입력하세요 : ");
 			String toyName = sc.next();
 			
-			boolean flag = false;
+			boolean flag = false;//플래그를 거짓으로 하나 세워둬서, 포문을 돌면서 내가 입력한 이름과 같은게 있다면 깃발을 트루로 바꿈
 			
 			for(Toy toy : toySet) {
 				
@@ -315,7 +315,7 @@ public class ToyFactory {
 			System.out.print("삭제할 재료명 입력 : ");
 			String materialName = sc.next();
 			
-			boolean flag = false;
+			boolean flag = false;//플래그를 세워서 포문을 돌면서 지우고싶은 재료명과 내가 가진 재료명이 같다면 플래그를 참으로 바꾼다
 			
 			for(Entry<Integer, String> entry : materialMap.entrySet()) {
 				
@@ -343,19 +343,21 @@ public class ToyFactory {
 				return;
 			}
 			
-			List<Toy> toyList = new ArrayList<Toy>(toySet); //내 토이셋은 중복저장도 안되고, 순서도 없는데 이걸 
+			List<Toy> toyList = new ArrayList<Toy>(toySet); //내 토이셋은 중복저장도 안되고, 순서도 없는데 이걸 어레이 리스트에 넣어서
+			//순서를 가진 형태로 변환
 		
 		
-			Collections.sort(toyList, new Comparator<Toy>() {
+			Collections.sort(toyList, new Comparator<Toy>() {//sort를 이용해서 오름차순으로 정렬
+				
 				@Override
-				public int compare(Toy o1, Toy o2) {
+				public int compare(Toy o1, Toy o2) {//오버라이드한 컴페어 메서드인데 
 				
 					return o1.getManufactureDate().compareTo(o2.getManufactureDate());
 				}
 			});
 			
-			int index = 1;
-			for(Toy toy : toyList) {
+			int index = 1;//인덱스를 1으로 세우고
+			for(Toy toy : toyList) {//토이 <리스트> 포문을 돌면서 1.장난감 인덱스증가, 2 장난감 출력
 				System.out.println(index + ". " + toy);
 				index++;
 			}
@@ -369,14 +371,15 @@ public class ToyFactory {
 			
 			System.out.println("\n<연령별로 사용 가능한 장난감>");
 			
-			Map<Integer , List<Toy>> toysByAge = new HashMap<Integer, List<Toy>>();
+			Map<Integer , List<Toy>> toysByAge = new HashMap<Integer, List<Toy>>();//키랑 밸류를 가지는 맵에 장난감 리스트를 넣어서
+			
 
-			for(Toy toy : toySet) {
+			for(Toy toy : toySet) {//포문을 돌면서 
 				
 				int age = toy.getAge(); // 현재 toy 객체가 가진 나이 얻어오기
 				
 				
-				toysByAge.putIfAbsent(age, new ArrayList<Toy>());
+				toysByAge.putIfAbsent(age, new ArrayList<Toy>());//토이바이에이지 라는 맵에 나이:
 			
 				toysByAge.get(age).add(toy);
 			
