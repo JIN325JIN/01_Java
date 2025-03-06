@@ -90,7 +90,7 @@ public class BookService {
 		String publisher = sc.next();
 		
 		if(bookList.add(new Book(num,name,author,price,publisher))) {
-			return "등록완료";
+			return "등록 완료";
 		}else {
 			return "등록 실패";
 		}
