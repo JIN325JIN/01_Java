@@ -172,11 +172,9 @@ public class ByteService {
 			
 			String content = sb.toString();
 			
-			
 			//이전
 			long startTime = System.nanoTime();
 			bos.write(content.getBytes());//버퍼에 저장 :파일 즉시 기록이아닌, 버퍼에 모아만 두는 
-			
 			
 			//이후			
 			long endTime = System.nanoTime();
