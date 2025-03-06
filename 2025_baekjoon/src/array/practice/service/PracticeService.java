@@ -219,18 +219,23 @@ public class PracticeService {
 	public void practice11() {
 		int[] arr = new int[10];
 		
-		for(int i=0; i<arr.length;i++) {
-			arr[i] = (int)(Math.random()*10+1);
-		}	
-		
-		System.out.print(Arrays.toString(arr));//열개가 랜덤으로 잘 들어감
+//		for(int i=0; i<arr.length;i++) {
+//			arr[i] = (int)(Math.random()*10+1);
+//		}	
+//		
+//		System.out.print(Arrays.toString(arr));//열개가 랜덤으로 잘 들어감
 			
 			for(int i=0; i<arr.length;i++) {
+				arr[i] = (int)(Math.random()*10+1);
 				boolean flag =false;
+				
 				for(int j =0; j<i;j++) {
-					arr[i] = arr[j];//여기 코드가 이상함
-					flag =true;
-					break;
+					if(arr[i] == arr[j]){
+						
+						flag =true;
+						break;
+						
+					}
 				}
 				if(flag) {
 					i--;
@@ -240,8 +245,14 @@ public class PracticeService {
 			}
 	}
 	
-	
-	public void practice12() {}
+	public void practice12() {//중복없이 
+		int [] arr = new int[6];
+		
+		for(int i =0; i<arr.length;i++) {
+			arr[i] = (int)(Math.random()*46+1);
+		}
+		System.out.println(Arrays.toString(arr));
+	}
 	
 	public void practice13() {
 		//문자 배열에 문자열 넣은 후에 제외하고 출력하기
