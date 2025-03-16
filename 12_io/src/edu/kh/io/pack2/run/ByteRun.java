@@ -31,13 +31,13 @@ public class ByteRun {
 	
 	
 		ByteService byteservice = new ByteService();
-		//byteservice.fileByteOutput();
-		//byteservice.bufferedFileByteOutput();
+		byteservice.fileByteOutput();
+		byteservice.bufferedFileByteOutput();
 		//byteservice.fileByteInput();
 		//byteservice.fileByteInput2();
 		//byteservice.bufferedFileByteInput();
 		//byteservice.readProperties();
-		byteservice.fileCopy();
+		//byteservice.fileCopy();
 	
 	}
 
