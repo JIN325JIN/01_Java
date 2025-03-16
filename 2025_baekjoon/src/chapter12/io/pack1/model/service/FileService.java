@@ -40,7 +40,7 @@ public class FileService {
 			
 			try {//파일클래스의 메서드는 대부분 io익셉션 발생시킴
 				//-io익셉션은 반드시 예외처리 해야하는 체크드 익셉션임!
-				
+				//
 				
 				
 				if(file.createNewFile()) {//파일이 잘 생성되면
@@ -51,8 +51,7 @@ public class FileService {
 				
 				e.printStackTrace();//예외정보+예외발생한 위치 추적 메서드
 			}
-			
-			
+
 		}
 	}
 	
@@ -92,8 +91,7 @@ public class FileService {
 			String type = null;
 			if(f.isFile()) type = "파일";
 			else type = "폴더";
-			
-			
+				
 			//파일 크기 (byte)
 			String size = f.length() + "B";
 			
@@ -110,9 +108,4 @@ public class FileService {
 			
 		}
 	}
-
-	
-
-
-
 }

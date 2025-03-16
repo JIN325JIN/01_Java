@@ -39,7 +39,7 @@ public class ByteRun {
 		// bs.fileByteInput();//노래가사 깨져서 읽혀
 		// bs.fileByteInput2();//노래가사 안깨져서 읽힘
 		 //bs.bufferedFileByteInput();//보조스트림으로 노래가사 읽어옹기
-		 bs.readProperties();
+		 bs.readProperties();//admin, password, ko, theme black
 	}
 
 }

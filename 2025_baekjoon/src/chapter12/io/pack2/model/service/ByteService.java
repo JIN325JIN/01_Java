@@ -10,7 +10,15 @@ import java.util.Properties;
 
 public class ByteService {
 //속도는 보조스트림 사용해야 훨빠름
-	
+//보조스트림 (bos)은 flush해주어야함
+//input stream은 flush필요없음
+//fos는 flush해도되고, 안해도도고
+//노래가사 데려올때 1번째 사안은 1바이트씩 끊어서 데려오기때문에 한글과같은 2바이트범주는 깨져서 읽힘
+//그래서 배열에 담아서 데려와야함
+	//try catch 문 안에서 FileInputStream fis = null; 같은걸 선언할 경우에는
+	//유효범위가 try-catch문 안으로 한정되고, 바깥에서fis사용불가하며, close도 사용할수 없다.
+	//보조스트림 close시 . f도 클로즈됨
+	//ex ) bos클로즈하면 fos도 
 	
 	/**
 	 * 바이트 기반 스트림을 이용한 파일 출력 + 데이터 출력
@@ -21,7 +29,7 @@ public class ByteService {
 		FileOutputStream fos = null;
 		
 		
-		//파일낫 파운드 익셉션이 나올수도있음 : 경로를 못찾았을때 발생우려
+		//파일낫 파운드 익셉션이 나올수도있음 : 경로를 못찾았을때 발생우려 : 경로가 있어야해
 		try {
 			
 			//new fileoutputstream ("경로") :
@@ -70,14 +78,11 @@ public class ByteService {
 			//현재시간까지의 차리를 ns 로 반환
 			
 			
-			
-			
-			
-			
 			try {
+				
 				fos.write(content.getBytes());
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			//=> 영어 특수문자 한글 잘 출력됨!!
@@ -150,11 +155,7 @@ public class ByteService {
 					bos.flush();//스트림안에 남아있는 모든 데이터 밀어냄!!
 					//bufferedoutputstream 사용시 flush필수!
 					
-					System.out.println("출력완료!");//진짜 출력
-					
-					
-					
-					
+					System.out.println("출력완료!");//진짜 출력					
 		
 		}catch(Exception e) {
 			e.printStackTrace();
@@ -166,13 +167,10 @@ public class ByteService {
 				e.printStackTrace();
 			}
 		}
-				
-		
-		
 	}
 	
 	/**
-	 * 노래가사 읽어오기 실패
+	 * 노래가사 읽어오기 : 근데 한글깨짐
 	 */
 	public void fileByteInput() {
 		//파일 입력용 바이트 기반 스트림 선언
@@ -219,12 +217,10 @@ public class ByteService {
 				if(fis!=null) fis.close();
 				
 			} catch (Exception e) {
-			}
 		}
+	}
 		
-		
-		
-		
+	
 		
 	}
 
@@ -266,9 +262,7 @@ public class ByteService {
 					} catch (Exception e) {
 					}
 				}
-				
-				
-				
+
 	}
 
 	
