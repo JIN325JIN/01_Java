@@ -12,6 +12,11 @@ public class GooGooDan {
 		int num1 =0;
 		int num2 =0;
 		
+		double height = 167.6;
+		int myheight = (int)height;
+		System.out.println(myheight);
+		
+		
 		
 		System.out.println("숫자 두개를 입력해주세요.");
 		num1 = sc.nextInt();//몇단까지
@@ -28,7 +33,7 @@ public class GooGooDan {
 				
 				for(int j = 1;j<=9;j++) {
 				
-				System.out.printf("%d * %d = %d     ",i,j,i*j);
+				//System.out.printf("%d * %d = %d     ",i,j,i*j);
 			}
 				for(int j = 1;j<=num2;j++) {
 				System.out.printf("%d * %d = %d     ",i,j,i*j);

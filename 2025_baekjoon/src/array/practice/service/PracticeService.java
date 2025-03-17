@@ -350,23 +350,28 @@ public class PracticeService {
 			arr[i] = sc.next();
 		}
 		sc.nextLine();
-		System.out.print("더 값을 입력 하시겠습니까? (y/n)");
-		char answer = sc.next().charAt(0);
 		
+		char answer;
 		do {
+			System.out.print("더 값을 입력 하시겠습니까? (y/n)");
+			answer = sc.next().charAt(0);
+			
 			System.out.print("더 입력하고 싶은 갯수 : ");
 			int input2 = sc.nextInt(); 
 			//여기까지함
+			
 			String[] arr2= new String[input+input2];
 			
-			for(int i =0; i<arr2.length;i++) {
-				arr[i]=arr2[i];
+			for(int i =0; i<arr.length;i++) {
+				arr2[i]=arr[i];//이전 배열의 값을 복사
+			}
+			for(int i = arr.length; i<arr2.length;i++) {
+				System.out.printf("%d번째 문자열 :",i+1);
+				sc.nextLine();
+				arr2[i] = sc.next();//새로운 내용의 값 대입
 			}
 			System.out.println(Arrays.toString(arr2));
-		
-			
 		}while(answer=='y'||answer=='Y'); 
-			
 	}	
 
 }
