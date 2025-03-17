@@ -19,6 +19,7 @@ public class FileService {
 		//존재하지 않는 폴더를 관리하는 file 객체 생성
 		
 		if(!directory.exists()) {//존재하지안으면
+			//io익셉션 방지
 			
 			directory.mkdirs();//모든 디렉토리 생성
 			

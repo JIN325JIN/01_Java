@@ -70,16 +70,15 @@ public class BookService {
 		System.out.print("도서 번호 :");
 		int bookNumber = sc.nextInt();
 		
-		System.out.print("도서 제목 :");
-		String name = sc.next();
 		sc.nextLine();
+		System.out.print("도서 제목 :");
+		String name = sc.nextLine();
+		
 		System.out.print("도서 저자 :");
 		String author = sc.next();
 		
 		System.out.print("도서 가격 :");
 		int price = sc.nextInt();
-		
-		sc.nextLine();
 		
 		System.out.print("도서 출판사 :");
 		String publisher = sc.next();

@@ -33,7 +33,10 @@ public class ByteRun {
 		
 		//새로운 공간에 할당하는게 아닌, 같은공간이 바뀐거라 가변성임
 		*/
+		
+		
 		 ByteService bs =new ByteService();
+		 
 		// bs.fileByteOutput();
 		// bs.bufferedFileByteOutput();
 		// bs.fileByteInput();//노래가사 깨져서 읽혀
